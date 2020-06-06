@@ -34,6 +34,9 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 
 app.use('/api/users', require('./routes/users'));
+app.use('/api/video', require('./routes/video'));
+//client의 videoupload에서 axios를 타고 이쪽으로 오고,,
+//다시 routes/video.js로 간다
 
 
 //use this to show the image you have in node js server to client (react js)
